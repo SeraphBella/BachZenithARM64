@@ -153,7 +153,7 @@ copyrighted game assets, keys, or other proprietary Sony software.
 Users are responsible for obtaining and using software in accordance
 with applicable laws and licenses.
 
-This repository contains work derived from the shadPS4 ecosystem.
+This repository contains work derived from the shadPS4 ecosystem (both Zennith's and BachataPs4, so is Upstream Shadps4) .
 Original project copyright and licensing notices are preserved in
 the respective source trees.
 
