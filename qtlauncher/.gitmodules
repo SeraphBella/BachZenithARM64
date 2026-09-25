@@ -1,0 +1,39 @@
+[submodule "externals/sdl3"]
+	path = externals/sdl3
+	url = https://github.com/shadps4-emu/ext-SDL.git
+	shallow = true
+[submodule "externals/fmt"]
+	path = externals/fmt
+	url = https://github.com/shadps4-emu/ext-fmt.git
+	shallow = true
+[submodule "externals/toml11"]
+	path = externals/toml11
+	url = https://github.com/ToruNiina/toml11.git
+	shallow = true
+[submodule "externals/volk"]
+	path = externals/volk
+	url = https://github.com/zeux/volk.git
+	branch = master
+[submodule "externals/vulkan-headers"]
+	path = externals/vulkan-headers
+	url = https://github.com/KhronosGroup/Vulkan-Headers.git
+	shallow = true
+[submodule "externals/json"]
+	path = externals/json
+	url = https://github.com/nlohmann/json.git
+	branch = develop
+[submodule "externals/openal-soft"]
+	path = externals/openal-soft
+	url = https://github.com/shadexternals/openal-soft.git
+	shallow = true
+[submodule "externals/spdlog"]
+	path = externals/spdlog
+	url = https://github.com/gabime/spdlog.git
+	shallow = true
+	branch = v2.x
+[submodule "externals/zstd"]
+	path = externals/zstd
+	url = https://github.com/shadexternals/zstd.git
+[submodule "externals/zarchive"]
+	path = externals/zarchive
+	url = https://github.com/shadexternals/ZArchive.git

@@ -1,0 +1,181 @@
+# BachZenithARM64
+
+## Seraphim v0.1 — ARM64 Linux Experimental
+
+BachZenithARM64 is an experimental native ARM64 Linux build of
+shadPS4, accompanied by an ARM64 build of shadPS4 QtLauncher.
+
+The goal of the project is to explore running PlayStation 4 software
+through shadPS4 on ARM64 Linux systems without running the emulator
+itself as an x86-64 application.
+
+> [!WARNING]
+> This is experimental software.
+>
+> Compatibility, stability and performance are not guaranteed.
+> Seraphim v0.1 is an early ARM64 Linux release intended for testing
+> and development.
+
+---
+
+## Seraphim v0.1
+
+Initial public experimental release.
+
+### Tested hardware
+
+Development and testing were performed on:
+
+- Qualcomm Snapdragon 8 Elite
+- Adreno 830
+- ARM64 / AArch64 Linux
+- Ubuntu 24.04 userspace
+
+Other ARM64 systems may work but have not necessarily been tested.
+
+### Bloodborne
+
+Bloodborne (CUSA03173 / version 01.09) has been used as the primary
+real-world test workload during development.
+
+The game reaches gameplay on the tested Snapdragon 8 Elite / Adreno
+830 system.
+
+Performance depends heavily on game patches, rendering resolution,
+GPU drivers and system configuration.
+
+This should NOT be interpreted as a general compatibility guarantee
+for Bloodborne or other PlayStation 4 titles.
+
+---
+
+## Repository layout
+
+    core/
+        ARM64 shadPS4 source snapshot
+
+    qtlauncher/
+        ARM64 shadPS4 QtLauncher source snapshot
+
+    SOURCE_COMMITS.txt
+        Source snapshot provenance
+
+Binary releases are distributed separately through GitHub Releases.
+
+---
+
+## Source provenance
+
+The Seraphim v0.1 source snapshot contains two components.
+
+### ARM64 shadPS4 core
+
+Release snapshot:
+
+    bec64c74 — Zenith ARM64 native release snapshot
+
+Base:
+
+    be6bc2e9c60799e071dd2fafa6216e8d80ec619c
+
+### ARM64 QtLauncher
+
+Release snapshot:
+
+    6c6c638 — ARM64 QtLauncher release snapshot
+
+Base:
+
+    4ce2f029c824fe3cb9dac80673b406baa6d22617
+
+See `SOURCE_COMMITS.txt` for the recorded release provenance.
+
+---
+
+## Binary release
+
+Seraphim v0.1 contains native AArch64 Linux executables:
+
+    bin/shadps4
+    bin/shadPS4QtLauncher
+
+SHA-256 checksums are supplied with the release.
+
+Seraphim v0.1 golden binary hashes:
+
+    shadps4
+    66a4644e5bc71d4c0ff6a7042f49a02034269c0bfb48b06212fa909d468ea1c4
+
+    shadPS4QtLauncher
+    70c6dba13543b37cecbc33b9217803601403909ab35ee33c6c3c725abecf3f15
+
+---
+
+## Runtime requirements
+
+These binaries are dynamically linked ARM64 Linux executables.
+
+The shadPS4 core requires standard AArch64 Linux runtime libraries.
+
+The QtLauncher additionally requires Qt 6 and associated multimedia,
+graphics, networking, audio and X11/Linux runtime libraries.
+
+The initial release is not a universal or fully self-contained Linux
+package. Exact runtime requirements may vary by distribution.
+
+Ubuntu 24.04 ARM64 is the reference environment for Seraphim v0.1.
+
+---
+
+## GPU and Vulkan
+
+A working Vulkan implementation is required.
+
+The development platform uses an Adreno 830 GPU.
+
+Performance and compatibility can vary substantially depending on:
+
+- Vulkan driver
+- Mesa/Turnip version
+- GPU
+- kernel
+- game
+- selected patches
+- rendering resolution
+
+---
+
+## Legal
+
+BachZenithARM64 does not include PlayStation 4 games, firmware,
+copyrighted game assets, keys, or other proprietary Sony software.
+
+Users are responsible for obtaining and using software in accordance
+with applicable laws and licenses.
+
+This repository contains work derived from the shadPS4 ecosystem.
+Original project copyright and licensing notices are preserved in
+the respective source trees.
+
+See:
+
+    core/LICENSES/
+    qtlauncher/LICENSES/
+
+for included licensing material.
+
+---
+
+## Project status
+
+**Seraphim v0.1**
+
+ARM64 Linux — Experimental
+
+Primary development target:
+
+**Snapdragon 8 Elite / Adreno 830**
+
+Project repository:
+
+**SeraphBella/BachZenithARM64**
