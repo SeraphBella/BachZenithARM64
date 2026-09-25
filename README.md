@@ -179,3 +179,66 @@ Primary development target:
 Project repository:
 
 **SeraphBella/BachZenithARM64**
+
+---
+
+## Ubuntu ARM64 installation
+
+Seraphim v0.1 is a native ARM64 Linux build.
+
+Tested development environment:
+
+- Ubuntu 24.04 ARM64
+- AArch64 / ARM64 CPU
+- Vulkan-capable GPU and ARM64 Vulkan driver
+
+### Install runtime dependencies
+
+```bash
+sudo apt update
+sudo apt install -y \
+  libatomic1 \
+  libudev1 \
+  libuuid1 \
+  libssl3t64 \
+  libopenal1 \
+  libqt6core6t64 \
+  libqt6gui6t64 \
+  libqt6widgets6t64 \
+  libqt6network6t64 \
+  libqt6concurrent6t64 \
+  libqt6multimedia6 \
+  libglx0 \
+  libopengl0 \
+  libvulkan1 \
+  mesa-vulkan-drivers
+```
+
+The Qt GUI also requires a working graphical environment such as X11 or Wayland.
+
+### Extract the release
+
+```bash
+tar -xJf BachZenithARM64-Seraphim-v0.1.tar.xz
+cd BachZenithARM64-Seraphim-v0.1
+```
+
+### Launch QtLauncher
+
+```bash
+./bin/shadPS4QtLauncher
+```
+
+### Launch the shadPS4 core directly
+
+```bash
+./bin/shadps4
+```
+
+### Verify release binaries
+
+```bash
+sha256sum -c SHA256SUMS
+```
+
+> **Note:** Seraphim v0.1 is experimental. Hardware and driver compatibility may vary, particularly across ARM64 GPU platforms.
