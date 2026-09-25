@@ -1,4 +1,58 @@
-# BachZenithARM64
+<div align="center">
+
+<img src="assets/seraphim-logo.png" width="220" alt="Seraphim logo">
+
+# ✦ Seraphim ✦
+
+### Native ARM64 Linux build of shadPS4
+
+[![Release](https://img.shields.io/badge/Release-Seraphim%20v0.1-ff69b4?style=for-the-badge)](https://github.com/SeraphBella/BachZenithARM64/releases/tag/v0.1)
+![Platform](https://img.shields.io/badge/Platform-ARM64%20Linux-222222?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Experimental-f06292?style=for-the-badge)
+
+<br>
+
+[![Instagram](https://img.shields.io/badge/Instagram-despair.waifu.cos-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/despair.waifu.cos/)
+[![TikTok](https://img.shields.io/badge/TikTok-despair.waifu.cos-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@despair.waifu.cos)
+[![Reddit](https://img.shields.io/badge/Reddit-Ok__tomorrow__8774-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/Ok_tomorrow_8774/)
+
+<br>
+
+*Bringing shadPS4 to native AArch64 Linux — developed and tested on Snapdragon 8 Elite.*
+
+</div>
+
+---
+
+## ✦ Seraphim in action
+
+<div align="center">
+
+### Bloodborne — Launch
+
+<img src="assets/screenshots/bloodborne-launch.jpg" width="900" alt="Bloodborne running through Seraphim on ARM64 Linux">
+
+**Bloodborne 01.09 (CUSA03173)**<br>
+*Snapdragon 8 Elite • Adreno 830 • Seraphim v0.1*
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="50%"><b>Hunter's Dream</b></td>
+<td align="center" width="50%"><b>Hunter close-up</b></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/screenshots/bloodborne-hunters-dream.jpg" alt="Bloodborne Hunter's Dream"></td>
+<td width="50%"><img src="assets/screenshots/bloodborne-hunter-closeup.jpg" alt="Bloodborne Hunter close-up"></td>
+</tr>
+</table>
+
+**Native ARM64 gameplay — Snapdragon 8 Elite / Adreno 830**
+
+</div>
+
+---
 
 ## Seraphim v0.1 — ARM64 Linux Experimental
 
@@ -18,9 +72,7 @@ itself as an x86-64 application.
 
 ---
 
-## Seraphim v0.1
-
-Initial public experimental release.
+**Seraphim v0.1 is the initial public experimental release.**
 
 ### Tested hardware
 
