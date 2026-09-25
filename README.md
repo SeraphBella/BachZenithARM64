@@ -240,5 +240,46 @@ cd BachZenithARM64-Seraphim-v0.1
 ```bash
 sha256sum -c SHA256SUMS
 ```
+---
+
+## Android / Termux chroot notes
+
+Seraphim v0.1 can run inside an ARM64 Ubuntu chroot on Android.
+
+However, Android or vendor-specific process management may freeze or terminate long-running Termux, Termux:X11, or emulator processes.
+
+### OnePlus / OxygenOS
+
+The primary Android development environment for Seraphim v0.1 uses:
+
+- OnePlus 13
+- Snapdragon 8 Elite / Adreno 830
+- Android 16 / OxygenOS
+- Root access
+- Termux
+- Termux:X11
+- Ubuntu 24.04 ARM64 chroot
+
+On OnePlus/Oplus devices, the Hans/OFreezer subsystem may interfere with long-running Termux and Termux:X11 sessions.
+
+The tested development configuration exempts:
+
+- `com.termux`
+- `com.termux.x11`
+
+from Hans freezing/restrictions using **Oplus Hans Policy**.
+
+Oplus Hans Policy:
+
+https://github.com/whitewhale0612/Oplus-Hans-Policy
+
+This is an **Android host configuration**, not a runtime dependency of the BachZenithARM64 binaries.
+
+Native ARM64 Linux systems do not require Oplus Hans Policy.
+
+Other Android vendors and ROMs may use different process-management systems and may require different configuration.
+
+> **Important:** Root/system modifications can affect device stability and security. Only apply Android system modifications if you understand their effects and have an appropriate recovery method.
+
 
 > **Note:** Seraphim v0.1 is experimental. Hardware and driver compatibility may vary, particularly across ARM64 GPU platforms.
